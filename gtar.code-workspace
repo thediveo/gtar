@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"go.lintTool": "golangci-lint",
+		"go.testFlags": [
+			"-v",
+			"--ginkgo.no-color"
+		],
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Debug/Test Package",
+				"type": "go",
+				"request": "launch",
+				"mode": "auto",
+				"program": "${fileDirname}"
+			},
+		],
+		"compounds": []
+	}
+}
